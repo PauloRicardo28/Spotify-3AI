@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#5DCF78">
+
+    <ImageView
+        android:id="@+id/img_MusicBackground"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_Anterior"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_skip_previous"/>
+
+
+        <ImageView
+            android:id="@+id/btn_Play"
+            android:onClick="play"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/btn_Proximo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_skip_next"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
